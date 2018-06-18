@@ -1,0 +1,40 @@
+"""
+vim commands
+"""
+1) changing multiple occurences of a symbol
+
+:5,20s/\<i\>/j/g
+
+
+"""
+colorschems preferences
+"""
+https://github.com/flazz/vim-colorschemes.git
+
+primary
+devbox-dark-256
+evolution
+
+
+
+"""
+rtll8723be range issues solving
+"""
+sudo make clean
+make
+sudo make install
+sudo modprobe -rv rtl8723be
+sudo modprobe -v rtl8723be ant_sel=2
+echo "options rtl8723be ant_sel=2" | sudo tee /etc/modprobe.d/50-rtl8723be.conf
+
+"""
+g++ command
+"""
+ ulimit -s 256000000 && g++ -O2 -std=gnu++14 -Wall -Wextra -Wfatal-errors -w -o a.out euler207.cpp  -DLOCAL_DEFINE
+
+*) for boost library
+ ulimit -s 256000000 && g++ -I /usr/include/boost/ -O2 -std=gnu++14 -Wall -Wextra -Wfatal-errors -w -o a.out try.cpp -DLOCAL_DEFINE
+
+*) for googletest
+ ulimit -s 256000000 && g++ -pthread -O2 -std=c++11 -Wall -Wextra -Wfatal-errors -w -o a.out sample1.cc sample1_unittest.cc -DLOCAL_DEFINE /usr/lib/libgtest.a
+
