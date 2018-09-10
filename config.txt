@@ -38,3 +38,7 @@ g++ command
 *) for googletest
  ulimit -s 256000000 && g++ -pthread -O2 -std=c++11 -Wall -Wextra -Wfatal-errors -w -o a.out sample1.cc sample1_unittest.cc -DLOCAL_DEFINE /usr/lib/libgtest.a
 
+"""
+computer's default name
+"""
+HP-Laptop-15q-bu1xx
