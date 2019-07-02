@@ -42,3 +42,56 @@ g++ command
 computer's default name
 """
 HP-Laptop-15q-bu1xx
+
+"""
+Cscope
+"""
+find "$PWD" -name '*.[ch]' \
+> -o -name '*.cpp' \
+> -o -name '*.cc' \
+> -o -name '*.hpp' \
+> -o -name '*.h' \
+> -o -name '*.c' \
+> -o -name '*.py' > "$PWD/cscope/cscope.files"
+
+cscope -b -i cscope.files
+
+export CSCOPE_DB="$PWD/cscope.out"
+
+"""
+Remove CLion completely
+"""
+sudo find . -iname "*clion*" | xargs rm -rf
+
+
+#00FF4F
+
+
+
+font = cousine for powerline
+#Terminal colors
+
+#FFFFFF
+#2C2E3A
+#6E46A4
+#FFFFFF
+#30F20A
+#FFFFFF
+#1AE45E
+// Pallete colors
+#262626
+#FF2700
+#42E66C
+#00F9FF
+#F1ECED
+#F4F70C
+#75D7EC
+#EFA554
+#7A7A7A
+#FF79C6
+#50FA7B
+#F1FA8C
+#BD93F9
+#FF5555
+#8BE9FD
+#FFB86C
