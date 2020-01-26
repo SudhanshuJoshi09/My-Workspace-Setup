@@ -12,6 +12,11 @@ autocmd! bufwritepost .vimrc source %
 " gets rid of extra space
 autocmd BufWritePre * %s/\s\+$//e
 
+""Cscope mapping
+"set nu
+"source ~/.vim/cscope_maps.vim
+"set hlsearch
+
 " map ctrl n to line numbers
 :nmap <C-N><C-N> :set invnumber<CR>
 
@@ -21,7 +26,7 @@ nmap <S-kEnter> <S-CR>
 "nmap <CR> o<Esc>
 
 " Mouse and backspace
-set mouse=a " on OSX press ALT and click
+" set mouse=a " on OSX press ALT and click
 set bs=2 " make backspace behave like normal again
 
 " Rebind <Leader> key
@@ -77,10 +82,9 @@ vnoremap > >gv " better indentation
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
 set background=dark
-"colorscheme codedark
+colorscheme codedark
 "colorscheme jellybeans
-colorscheme luna-term
-set cursorline
+"colorscheme vim-framer-syntax
 let g:airline_theme = 'base16_colors'
 set autoread
 set laststatus =2
@@ -104,15 +108,23 @@ syntax on
 map <C-F> :py3f ~/.clang-format.py<cr>
 imap <C-F> <c-o>:py3f ~/.clang-format.py<cr>
 
+function! Formatonsave()
+  let l:lines="all" "formatdiff = 1
+  py3f ~/.clang-format.py
+endfunction
+
 " Compile and execute c++ code
 set autowrite
 nnoremap <C-F5> :!clear && g++ -std=c++14 % -Wall -g -o %.out && ./%.out && rm -rf %.out<CR>
 
 " path to directory where library can be found
- let g:clang_library_path='/usr/lib/llvm-6.0/lib'
+ let g:clang_library_path='/usr/lib/llvm-3.8/lib'
  " or path directly to the library file
- let g:clang_library_path='/usr/lib/llvm-6.0/lib/libclang.so.1'
-
+ "let g:clang_complete_auto = 1
+ "let g:clang_use_library = 1
+ "let g:clang_debug = 1
+ "let g:clang_library_path='/usr/lib/llvm-3.8/lib/libclang-3.8.so.1'
+ "let g:clang_user_options='|| exit 0'
 set nocompatible
 set nocp
 
@@ -169,7 +181,7 @@ set noswapfile
 " Settings for vim-powerline
 " cd ~/.vim/bundle
 " git clone git://github.com/Lokaltog/vim-powerline.git
-au Filetype python colorscheme valloric
+au Filetype python colorscheme gruvbox
 set laststatus=2
 
 " Settings for ctrlp
@@ -221,17 +233,12 @@ endfunction
 inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
 
-function! Formatonsave()
-  let l:lines="all" "formatdiff = 1
-  py3f ~/.clang-format.py
-endfunction
-
-"cscope cursor workaround
-function! Csc()
-  cscope find c <cword>
-  copen
-endfunction
-command! Csc call Csc()
+""cscope cursor workaround
+"function! Csc()
+  "cscope find c <cword>
+  "copen
+"endfunction
+"command! Csc call Csc()
 
 ""python with virtualenv support
 "py3 << EOF
@@ -247,12 +254,9 @@ command! Csc call Csc()
 nnoremap <F3> :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
 nnoremap <F4> :%s/<c-r><c-w>/<c-r><c-w>/g<c-f>$F/i
 
-let g:NERDCustomDelimiters = { 'c': { 'left': '//','right': '//' } }
-let g:NERDCustomDelimiters = { 'cpp': { 'left': '//','right': '' } }
-let g:NERDDefaultAlign = 'left'
-
-" YouCompleteMe
-let g:ycm_global_ycm_extra_conf = "/home/weirdo/.ycm_extra_conf.py"
+" ctags optimization
+"set autochdir
+set tags=tags;
 
 " Auto run clang-format while writting
 autocmd BufWritePre *.h,*.hpp,*.cc,*.cpp call Formatonsave()
