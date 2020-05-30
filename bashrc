@@ -23,6 +23,16 @@ case $- in
       *) return;;
 esac
 
+#Compile C++ file
+compile() {
+  ulimit -s 256000000 && g++ -O2 -std=c++14 -Wall -Wextra -Wfatal-errors -w -o "$2" "$1" -DLOCAL_DEFINE
+}
+
+# start a file in cpp
+init-code() {
+  cp template.cpp "$1" && vi "$1"
+}
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -113,7 +123,21 @@ if ! shopt -oq posix; then
 fi
 
 #-------------------ALIAS----------------------------------
-alias tmux="TERM=screen-256color-bce tmux"
 #alias cd_des="cd ~/work2/tarana3/cpu/applications/src"
+alias tmux="tmux -u"
+alias isitUpToDate="sudo apt-get update; sudo apt-get upgrade"
 alias cd_vim="cd ~/.vim/bundle"
-alias cd_des="cd ~/Desktop/IP_cams_communication/src"
+alias cd_cpp="cd ~/Desktop/C++_projects"
+alias cd_py="cd ~/Desktop/PY_projects"
+alias run_tor="cd ~/tor-browser_en-US; ./start-tor-browser.desktop; cd ~"
+alias unetbootin="sudo QT_X11_NO_MITSHM=1 unetbootin"
+alias compile="g++ -O2 -std=c++14 -Wall -Wextra -Wfatal-errors -w -o a.out -DDEBUG"
+alias aout="time ./a.out"
+# Tarana memories
+# alias mdevel="mosh abhishek.rawat@10.161.1.5"
+# alias mpunedevel="mosh abhishek.rawat@10.160.0.5"
+alias archlogin="ssh root@192.168.122.129"
+###
+# Sourcing z
+###
+source ~/z.sh

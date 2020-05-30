@@ -1,0 +1,11 @@
+pane	0	1	:bash	1	:*	1	:/home/weirdo/Desktop/C++_projects/Parallel_SSSP	1	bash	:
+pane	Parallel_SSSP	1	:vi	0	:	1	:/home/weirdo/Desktop/C++_projects/Parallel_SSSP	1	vi	:vi -S
+pane	Parallel_SSSP	2	:vi	0	:-	1	:/home/weirdo/Desktop/C++_projects/Parallel_SSSP	1	vi	:vi GPU.cpp
+pane	Parallel_SSSP	3	:run	1	:*	1	:/home/weirdo/Desktop/C++_projects/Parallel_SSSP	0	bash	:
+pane	Parallel_SSSP	3	:run	1	:*	2	:/home/weirdo/Desktop/C++_projects/Parallel_SSSP	0	vi	:vi Makefile
+pane	Parallel_SSSP	3	:run	1	:*	3	:/home/weirdo/Desktop/C++_projects/Parallel_SSSP/inp_out_files	1	vi	:vi compare_unittest.py
+window	0	1	1	:*	b6de,237x61,0,0,1
+window	Parallel_SSSP	1	0	:	c2df,237x64,0,0,2
+window	Parallel_SSSP	2	0	:-	c2e0,237x64,0,0,3
+window	Parallel_SSSP	3	1	:*	afc9,237x64,0,0{113x64,0,0,4,123x64,114,0[123x33,114,0,5,123x30,114,34,6]}
+state	Parallel_SSSP	0

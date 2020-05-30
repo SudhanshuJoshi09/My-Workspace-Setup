@@ -1,0 +1,56 @@
+pane	0	1	:bash	1	:*	1	:/home/weirdo/Desktop/C++_projects	1	bash	:
+pane	3	1	:vi	0	:-	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	vi	:vi crypto++.cpp
+pane	3	2	:bash	1	:*	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	bash	:
+pane	4	1	:vi	0	:	1	:/home/weirdo/Desktop/MKC-for-IP-cams-communication/src/encryption	1	vi	:vi rsa.cpp
+pane	4	2	:vi	1	:*	1	:/home/weirdo/Desktop/MKC-for-IP-cams-communication/src/encryption	1	vi	:vi sample_text2.txt
+pane	4	3	:bash	0	:#-	1	:/home/weirdo/Desktop/MKC-for-IP-cams-communication/src/encryption	1	bash	:
+pane	5	1	:vi	0	:	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	vi	:vi crypto++.cpp
+pane	5	2	:vi	0	:-	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	vi	:vi sample_text2.txt
+pane	5	3	:bash	1	:*	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	bash	:
+pane	6	1	:vi	1	:*	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	vi	:vi crypto++.cpp
+pane	6	2	:bash	0	:#-	1	:/home/weirdo/Desktop/C++_projects/crypto_lib	1	bash	:
+pane	7	1	:bash	1	:*	1	:/home/weirdo/Desktop/codes	1	bash	:
+pane	algorithm	1	:git	0	:	1	:/home/weirdo/Desktop/codes	0	git	:git log --graph --oneline --decorate --all
+pane	algorithm	1	:git	0	:	2	:/home/weirdo/Desktop/codes	1	bash	:
+pane	algorithm	2	:vi	1	:*	1	:/home/weirdo/Desktop/codes	1	bash	:
+pane	algorithm	2	:vi	1	:*	2	:/home/weirdo/Desktop/codes	0	bash	:tree -C
+sh -c LESS= less --dumb --chop-long-lines --tilde --IGNORE-CASE --RAW-CONTROL-CHARS
+pane	algorithm	3	:bash	0	:-	1	:/home/weirdo/Desktop/codes	1	bash	:
+pane	algorithm	3	:bash	0	:-	2	:/home/weirdo/Desktop/codes/Samsung_Practise	0	vi	:vi /home/weirdo/.bashrc
+pane	algorithm	4	:bash	0	:	1	:/home/weirdo/Desktop/codes/Samsung_Practise	1	bash	:
+pane	mine	1	:git	0	:#-	1	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication	0	bash	:
+pane	mine	1	:git	0	:#-	2	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication	1	bash	:
+pane	mine	2	:bash	0	:	1	:/home/weirdo/Desktop/C++_projects	1	vi	:vi libevent-thread-code/workqueue.c
+pane	mine	3	:vi	0	:#	1	:/home/weirdo/Desktop/C++_projects	1	vi	:vi -S
+pane	mine	4	:bash	0	:	1	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication/src/encryption	1	vi	:vi -S montgomery_impl.vim
+pane	mine	5	:bash	0	:	1	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication	0	vi	:vi prime_gen.py
+pane	mine	5	:bash	0	:	2	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication	0	vi	:vi src/encryption/sample_text.txt
+pane	mine	5	:bash	0	:	3	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication	1	vi	:vi try.cpp
+pane	mine	6	:bash	0	:#	1	:/home/weirdo/Desktop/C++_projects/MKC-for-IP-cams-communication/src/encryption	1	bash	:
+pane	mine	7	:Without-Montgomery	1	:*	1	:/home/weirdo/Desktop/MKC-for-IP-cams-communication/src/encryption	0	vi	:vi rsa.cpp
+pane	mine	7	:Without-Montgomery	1	:*	2	:/home/weirdo/Desktop/MKC-for-IP-cams-communication/src/encryption	0	bash	:
+pane	mine	7	:Without-Montgomery	1	:*	3	:/home/weirdo/Desktop/MKC-for-IP-cams-communication/src/encryption	1	vi	:vi sample_text2.txt
+window	0	1	1	:*	c2de,237x64,0,0,1
+window	3	1	0	:-	c2df,237x64,0,0,2
+window	3	2	1	:*	c2e0,237x64,0,0,3
+window	4	1	0	:	c2e1,237x64,0,0,4
+window	4	2	1	:*	c2e2,237x64,0,0,5
+window	4	3	0	:#-	c2e3,237x64,0,0,6
+window	5	1	0	:	c2e4,237x64,0,0,7
+window	5	2	0	:-	c2e5,237x64,0,0,8
+window	5	3	1	:*	c2e6,237x64,0,0,9
+window	6	1	1	:*	619f,237x64,0,0,10
+window	6	2	0	:#-	61a0,237x64,0,0,11
+window	7	1	1	:*	e1a6,237x64,0,0,27
+window	algorithm	1	0	:	cd52,237x64,0,0{107x64,0,0,26,129x64,108,0,35}
+window	algorithm	2	1	:*	6d00,237x64,0,0{40x64,0,0,36,196x64,41,0,12}
+window	algorithm	3	0	:-	d372,237x64,0,0{118x64,0,0,13,118x64,119,0,40}
+window	algorithm	4	0	:	e1a1,237x64,0,0,41
+window	mine	1	0	:#-	1375,237x64,0,0{118x64,0,0,14,118x64,119,0,15}
+window	mine	2	0	:	61a5,237x64,0,0,16
+window	mine	3	0	:#	61a6,237x64,0,0,17
+window	mine	4	0	:	61a7,237x64,0,0,18
+window	mine	5	0	:	6039,237x64,0,0{118x64,0,0,19,118x64,119,0[118x34,119,0,20,118x29,119,35,21]}
+window	mine	6	0	:#	e1a1,237x64,0,0,22
+window	mine	7	1	:*	4f9d,237x64,0,0{118x64,0,0,23,118x64,119,0[118x32,119,0,24,118x31,119,33,25]}
+state	algorithm	0

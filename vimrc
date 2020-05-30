@@ -253,6 +253,7 @@ let g:NERDDefaultAlign = 'left'
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = "/home/weirdo/.ycm_extra_conf.py"
+autocmd BufNewFile,BufRead /home/weirdo/Desktop/C++_projects/linux/* let g:ycm_global_ycm_extra_conf = "/home/weirdo/Desktop/C++_projects/linux/ycm_extra_conf.py"
 
 " Auto run clang-format while writting
 autocmd BufWritePre *.h,*.hpp,*.cc,*.cpp call Formatonsave()
